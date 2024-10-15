@@ -1,0 +1,102 @@
+/* Reset de CSS */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* Fin del Reset */
+
+/* Estilos de la aplicación */
+
+:root {
+  --blanco-1: #ffffff;
+  --blanco-2: #f9f7fc;
+  --verde-claro-1: #69cc88;
+  --verde-claro-2: #5bc542;
+  --azul-claro-1: #7dd6ef;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  width: 100%;
+  background-color: var(--blanco-1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 5rem;
+}
+
+.logo-nombre-empresa a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+}
+
+.logo-empresa {
+  width: 10vw;
+  height: auto;
+  max-width: 10rem;
+}
+
+@media (max-width: 48rem) {
+  .logo-empresa {
+    width: 15vw;
+  }
+}
+
+@media (max-width: 30rem) {
+  .logo-empresa {
+    width: 20vw;
+  }
+}
