@@ -8,6 +8,7 @@
 
 * {
   margin: 0;
+  padding: 0;
 }
 
 body {
@@ -54,9 +55,12 @@ h6 {
   --blanco-1: #ffffff;
   --blanco-2: #f9f7fc;
   --verde-1: #17844e;
+  --verde-2: #0b8c79;
+  --verde-3: #03b85a;
   --azul-1: #357bad;
   --azul-boton-1: #e8eef5;
   --azul-boton-2: #15579e;
+  --color-texto: #2e2e2e;
 }
 
 body {
@@ -64,6 +68,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-family: "Roboto", sans-serif;
 }
 
 header {
@@ -71,11 +76,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem;
-  margin-bottom: 5rem;
   width: 100%;
   background-color: var(--blanco-1);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  font-family: "Roboto", sans-serif;
 }
 
 .logo-nombre-empresa a {
@@ -105,13 +107,14 @@ header {
 
 .btn-contacto {
   display: none;
-  padding: 0.5rem 3rem;
+  padding: 0.7rem 4rem;
   border: none;
   border-radius: 0.2rem;
   background-color: var(--azul-boton-1);
   color: var(--azul-boton-2);
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 600;
+  letter-spacing: 0.1rem;
   cursor: pointer;
 }
 
@@ -129,7 +132,6 @@ header {
   left: 0;
   width: 100%;
   background-color: var(--blanco-1);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .btn-contacto-drop {
@@ -165,5 +167,62 @@ header {
 
   .dropdown-menu {
     display: none;
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  color: var(--color-texto);
+}
+
+.primera-seccion {
+  background-color: var(--blanco-2);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  gap: 5rem;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  text-wrap: wrap;
+}
+
+.texto-especial-1 {
+  color: var(--verde-2);
+}
+
+.texto-especial-2 {
+  color: var(--verde-3);
+}
+
+.primera-seccion img {
+  width: 45vw;
+  max-width: 30rem;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .primera-seccion {
+    flex-direction: row;
+    padding: 3rem;
+  }
+
+  h1 {
+    font-size: 4rem;
+    margin-left: 5rem;
+  }
+
+  .primera-seccion img {
+    width: 25vw;
   }
 }
