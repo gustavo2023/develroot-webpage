@@ -53,9 +53,10 @@ h6 {
 :root {
   --blanco-1: #ffffff;
   --blanco-2: #f9f7fc;
-  --verde-claro-1: #69cc88;
-  --verde-claro-2: #5bc542;
-  --azul-claro-1: #7dd6ef;
+  --verde-1: #17844e;
+  --azul-1: #357bad;
+  --azul-boton-1: #e8eef5;
+  --azul-boton-2: #15579e;
 }
 
 body {
@@ -70,10 +71,11 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem;
+  margin-bottom: 5rem;
   width: 100%;
   background-color: var(--blanco-1);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 5rem;
+  font-family: "Roboto", sans-serif;
 }
 
 .logo-nombre-empresa a {
@@ -81,22 +83,87 @@ header {
   align-items: center;
   text-decoration: none;
   color: #000;
+  margin-left: 1rem;
 }
 
 .logo-empresa {
-  width: 10vw;
+  width: 5vw;
   height: auto;
   max-width: 10rem;
+  min-width: 3rem;
 }
 
-@media (max-width: 48rem) {
-  .logo-empresa {
-    width: 15vw;
+.nombre-empresa {
+  display: none;
+  font-size: 2.2rem;
+  font-weight: 700;
+  background: linear-gradient(180deg, var(--azul-1) 20%, var(--verde-1) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn-contacto {
+  display: none;
+  padding: 0.5rem 3rem;
+  border: none;
+  border-radius: 0.2rem;
+  background-color: var(--azul-boton-1);
+  color: var(--azul-boton-2);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.js-icono-barras {
+  display: block;
+  text-decoration: none;
+  color: #4b4b4b;
+  font-size: 1.5rem;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 15%;
+  left: 0;
+  width: 100%;
+  background-color: var(--blanco-1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-contacto-drop {
+  display: block;
+  padding: 1rem;
+  border: none;
+  width: 100%;
+  text-align: center;
+  background-color: #eef1f5;
+  color: var(--azul-boton-2);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .logo-nombre-empresa {
+    margin-left: 2.5rem;
   }
-}
 
-@media (max-width: 30rem) {
-  .logo-empresa {
-    width: 20vw;
+  .nombre-empresa {
+    display: block;
+  }
+
+  .btn-contacto {
+    display: block;
+    margin-right: 3rem;
+  }
+
+  .js-icono-barras {
+    display: none;
+  }
+
+  .dropdown-menu {
+    display: none;
   }
 }
