@@ -128,7 +128,7 @@ header {
 .dropdown-menu {
   display: none;
   position: absolute;
-  top: 15%;
+  top: 13%;
   left: 0;
   width: 100%;
   background-color: var(--blanco-1);
