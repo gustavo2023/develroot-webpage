@@ -47,33 +47,38 @@
       </section>
 
       <section class="cotizacion" id="cotizacion">
-        <h2 class="texto-cotizacion texto-gradiente-1">Obtén una cotización</h2>
-        <p>(en el plazo de una hora)</p>
-        <p>
-          Indícanos qué necsitas y te contactaremos con
-          <strong>tarifas</strong> y algunos
-          <strong>CVs acordes a tus intereses.</strong>
-        </p>
+        <div class="contenedor-cot">
+          <h2 class="titulo-gradiente-1">Obtén una cotización</h2>
+          <p>(en el plazo de una hora)</p>
+          <p>
+            Indícanos qué necesitas y te contactaremos con
+            <strong>tarifas</strong> y algunos
+            <strong>CVs acordes a tus intereses.</strong>
+          </p>
+        </div>
+
         <form>
-          <label for="input-correo"><strong>Correo electrónico</strong></label>
+          <label for="input-correo">Correo electrónico</label>
           <input
             type="email"
             placeholder="nombre@example.com"
             id="input-correo"
+            required
           />
-          <label for="descripcion"><strong>¿Qué estás buscando?</strong></label>
+          <label for="descripcion">¿Qué estás buscando?</label>
           <textarea
             name="descripcion"
             id="descripcion"
             cols="30"
             rows="10"
             placeholder="Necesito un desarrollador web fullstack, con experiencia en PHP y Javascript. Él/Ella tiene que ser muy bueno resolviendo problemas y que le guste trabajar en equipo."
+            required
           ></textarea>
-          <button>Enviar</button>
+          <button class="btn-enviar" id="enviar">Enviar</button>
         </form>
       </section>
 
-      <section class="como-funciona" id="como-funciona">
+      <section class="seccion-como-funciona" id="como-funciona">
         <p>CÓMO FUNCIONA</p>
         <p>Te lo ponemos <u>muy fácil</u></p>
         <div class="flecha corta">
