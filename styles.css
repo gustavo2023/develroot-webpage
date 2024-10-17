@@ -237,6 +237,7 @@ h1 {
   align-items: center;
   justify-content: center;
   padding: 2rem;
+  margin-top: 5rem;
   border-bottom-left-radius: 3rem;
   border-bottom-right-radius: 3rem;
   position: relative;
@@ -252,8 +253,14 @@ h1 {
 .titulo-gradiente-1 {
   font-size: 1.5rem;
   font-weight: 700;
+  line-height: 1;
   text-align: center;
-  background: linear-gradient(180deg, var(--azul-1) 20%, var(--verde-1) 100%);
+  background: linear-gradient(
+    60deg,
+    var(--azul-1) 20%,
+    var(--verde-1) 35%,
+    var(--verde-3) 100%
+  );
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -302,14 +309,19 @@ textarea {
   padding: 0.5rem 4rem;
   border: none;
   border-radius: 0.2rem;
-  background: linear-gradient(90deg, var(--azul-1) 0, var(--verde-1) 100%);
+  background: linear-gradient(
+    60deg,
+    var(--azul-1) 30%,
+    var(--verde-1) 55%,
+    var(--verde-3) 100%
+  );
   color: var(--blanco-1);
   font-size: 0.95rem;
   letter-spacing: 0.1rem;
   cursor: pointer;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1024px) {
   .cotizacion {
     width: 85%;
     flex-direction: row;
@@ -349,11 +361,10 @@ textarea {
   }
 
   .btn-enviar {
-    /*width: 50%;
+    width: 50%;
     margin-left: 50%;
-    transform: translateX(-50%);*/
+    transform: translateX(-50%);
     padding: 0.8rem 5rem;
-    width: 12rem;
   }
 }
 
