@@ -54,10 +54,9 @@ h6 {
 :root {
   --blanco-1: #ffffff;
   --blanco-2: #f9f7fc;
-  --verde-1: #17844e;
   --verde-2: #0b8c79;
-  --verde-3: #03b85a;
-  --azul-1: #357bad;
+  --verde-3: #02c155;
+  --azul-1: #145d9a;
   --azul-boton-1: #e8eef5;
   --azul-boton-2: #15579e;
   --color-texto: #2e2e2e;
@@ -68,7 +67,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: "Roboto", sans-serif;
   background-color: var(--blanco-2);
 }
 
@@ -79,6 +77,7 @@ header {
   padding: 1.5rem;
   width: 100%;
   background-color: var(--blanco-1);
+  font-family: "Roboto", sans-serif;
 }
 
 .logo-nombre-empresa a {
@@ -98,9 +97,10 @@ header {
 
 .nombre-empresa {
   display: none;
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: 700;
-  background: linear-gradient(180deg, var(--azul-1) 20%, var(--verde-1) 100%);
+  letter-spacing: 0.1rem;
+  background: linear-gradient(to bottom, var(--azul-1) 0%, var(--verde-3) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -164,6 +164,12 @@ header {
 }
 
 @media (min-width: 1024px) {
+  header {
+    -webkit-box-shadow: 0px 12px 5px -3px rgba(0, 0, 0, 0.13);
+    -moz-box-shadow: 0px 12px 5px -3px rgba(0, 0, 0, 0.13);
+    box-shadow: 0px 12px 5px -3px rgba(0, 0, 0, 0.13);
+  }
+
   .logo-nombre-empresa {
     margin-left: 2.5rem;
   }
@@ -193,6 +199,7 @@ main {
   justify-content: center;
   width: 100%;
   color: var(--color-texto);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .primera-seccion {
@@ -205,6 +212,7 @@ main {
   padding: 2rem;
   gap: 5rem;
   margin-top: 8rem;
+  font-family: "Tahoma", sans-serif;
 }
 
 h1 {
@@ -257,6 +265,7 @@ h1 {
   border-bottom-right-radius: 3rem;
   position: relative;
   top: 5rem;
+  font-family: "Roboto", sans-serif;
 }
 
 .contenedor-cot {
@@ -266,23 +275,19 @@ h1 {
 }
 
 .titulo-gradiente-1 {
-  font-size: 1.5rem;
-  font-weight: 700;
+  font-size: 1.36rem;
+  font-weight: 900;
   line-height: 1.2;
   text-align: center;
-  background: linear-gradient(
-    60deg,
-    var(--azul-1) 20%,
-    var(--verde-1) 35%,
-    var(--verde-3) 100%
-  );
+  background: linear-gradient(to bottom, var(--azul-1) 0%, var(--verde-3) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .contenedor-cot p:first-of-type {
-  font-size: 1.1rem;
+  font-size: 1.15rem;
+  font-weight: 500;
   text-align: center;
   margin-bottom: 3rem;
 }
@@ -304,10 +309,11 @@ label {
 
 input,
 textarea {
-  padding: 0.5rem;
+  padding: 0.7rem 0.5rem;
   border: 1px solid #d1d1d1;
   border-radius: 0.2rem;
   margin-bottom: 1rem;
+  font-size: 0.9rem;
 }
 
 input:focus,
@@ -324,16 +330,37 @@ textarea {
   padding: 0.5rem 4rem;
   border: none;
   border-radius: 0.2rem;
-  background: linear-gradient(
-    60deg,
-    var(--azul-1) 30%,
-    var(--verde-1) 55%,
-    var(--verde-3) 100%
-  );
+  background: linear-gradient(90deg, var(--azul-1) 0%, var(--verde-3) 100%);
   color: var(--blanco-1);
   font-size: 0.95rem;
   letter-spacing: 0.1rem;
   cursor: pointer;
+}
+
+@media (min-width: 600px) and (max-width: 1023px) {
+  .cotizacion {
+    width: 85%;
+    padding: 1.5rem 4rem;
+    -webkit-box-shadow: 10px 10px 5px -3px rgba(0, 0, 0, 0.37);
+    -moz-box-shadow: 10px 10px 5px -3px rgba(0, 0, 0, 0.37);
+    box-shadow: 10px 10px 5px -3px rgba(0, 0, 0, 0.37);
+  }
+
+  .titulo-gradiente-1 {
+    font-size: 1.8rem;
+  }
+
+  .contenedor-cot p:first-of-type {
+    font-size: 1.2rem;
+  }
+
+  .contenedor-cot p:nth-of-type(2) {
+    font-size: 1.3rem;
+  }
+
+  textarea {
+    height: 8rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -342,6 +369,9 @@ textarea {
     flex-direction: row;
     padding: 1rem 3rem;
     gap: 3rem;
+    -webkit-box-shadow: 10px 10px 5px -3px rgba(0, 0, 0, 0.37);
+    -moz-box-shadow: 10px 10px 5px -3px rgba(0, 0, 0, 0.37);
+    box-shadow: 10px 10px 5px -3px rgba(0, 0, 0, 0.37);
   }
 
   .contenedor-cot {
@@ -358,7 +388,7 @@ textarea {
   .contenedor-cot p:first-of-type {
     font-size: 1.5rem;
     text-align: left;
-    margin-top: -0.8rem;
+    margin-top: -0.3rem;
   }
 
   .contenedor-cot p:last-of-type {
@@ -392,17 +422,30 @@ textarea {
   align-items: center;
   justify-content: center;
   padding: 2rem;
-  gap: 5rem;
 }
 
 .seccion-como-funciona p:first-of-type {
   margin-top: 10rem;
-  font-size: 0.9rem;
-  letter-spacing: 0.1rem;
+  margin-bottom: 0.7rem;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.15rem;
 }
 
-.seccion-como-funciona p:last-of-type {
+.seccion-como-funciona p:nth-of-type(2) {
   font-size: 1.3rem;
   font-weight: 700;
-  margin-top: -4rem;
+}
+
+.subrayado {
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
+}
+
+.contenedor-hiw {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
 }
