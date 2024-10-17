@@ -148,7 +148,22 @@ header {
   cursor: pointer;
 }
 
-@media (min-width: 758px) {
+@media (min-width: 600px) and (max-width: 1023px) {
+  .btn-contacto {
+    display: block;
+    margin-right: 3rem;
+  }
+
+  .js-icono-barras {
+    display: none;
+  }
+
+  .dropdown-menu {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
   .logo-nombre-empresa {
     margin-left: 2.5rem;
   }
@@ -212,7 +227,7 @@ h1 {
   height: auto;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .primera-seccion {
     flex-direction: row;
     padding: 6rem;
