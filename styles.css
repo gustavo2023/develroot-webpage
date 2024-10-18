@@ -522,10 +522,6 @@ textarea {
 }
 
 @media (min-width: 1024px) {
-  .contenedor-hiw {
-    flex-direction: row;
-  }
-
   .sp-text {
     font-size: 1rem;
   }
@@ -540,23 +536,47 @@ textarea {
   }
 
   .contenedor-hiw {
+    display: flex;
     flex-direction: row;
-    margin: 3rem 0;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 3rem 0;
   }
 
   .flecha-corta {
     content: url("./images/arrow_tr.png");
-    height: auto;
   }
 
   .flecha-larga {
     content: url("./images/arrow_op.png");
   }
 
-  .contenedor-box {
-    flex-direction: column;
+  .flecha-corta,
+  .flecha-larga {
+    width: 10rem;
+    height: auto;
+    position: relative;
+    bottom: 4rem;
+    flex-grow: 0;
   }
-  .container-pasos {
+
+  .contenedor-box {
+    display: flex;
     flex-direction: column;
+    align-items: center;
+  }
+
+  .pasos {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .container-pasos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0;
   }
 }
