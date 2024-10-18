@@ -580,3 +580,33 @@ textarea {
     padding: 0;
   }
 }
+
+.por-que-develroot {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  margin-top: 8rem;
+}
+
+.subtitulo {
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  color: var(--verde-3);
+  letter-spacing: 0.1rem;
+}
+
+.sp-text-3 {
+  font-size: 1.25rem;
+  text-wrap: wrap;
+}
+
+.contenedor-box-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 5rem;
+}
