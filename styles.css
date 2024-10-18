@@ -477,3 +477,11 @@ textarea {
   height: 5rem;
   font-size: 2rem;
 }
+
+.container-pasos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
