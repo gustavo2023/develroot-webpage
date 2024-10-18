@@ -425,7 +425,7 @@ textarea {
   padding: 2rem;
 }
 
-.seccion-como-funciona p:first-of-type {
+.sp-text {
   margin-top: 10rem;
   margin-bottom: 0.7rem;
   font-size: 0.76rem;
@@ -433,9 +433,10 @@ textarea {
   letter-spacing: 0.15rem;
 }
 
-.seccion-como-funciona p:nth-of-type(2) {
+.sp-text-2 {
   font-size: 1.3rem;
   font-weight: 700;
+  margin-bottom: 3rem;
 }
 
 .subrayado {
@@ -448,5 +449,31 @@ textarea {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 3rem;
+  gap: 1.2rem;
+  text-align: center;
+}
+
+.flecha-corta {
+  content: url("./images/small-arrow-d.png");
+  display: block;
+  width: 15%;
+  height: auto;
+}
+
+.flecha-larga {
+  content: url("./images/big-arrow-d.png");
+  display: block;
+  width: 17%;
+  height: auto;
+}
+
+.pasos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #2b67a7;
+  width: 5rem;
+  height: 5rem;
+  font-size: 2rem;
 }
