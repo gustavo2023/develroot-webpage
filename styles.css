@@ -381,7 +381,7 @@ textarea {
   }
 
   .titulo-gradiente-1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-align: left;
   }
 
@@ -406,10 +406,11 @@ textarea {
   }
 
   .btn-enviar {
-    width: 50%;
+    width: 60%;
     margin-left: 50%;
     transform: translateX(-50%);
-    padding: 0.8rem 5rem;
+    padding: 0.8rem 0;
+    text-align: center;
   }
 }
 
