@@ -216,9 +216,10 @@ main {
 }
 
 h1 {
-  font-size: 2.3rem;
+  font-size: 2.15rem;
   font-weight: 700;
   text-wrap: wrap;
+  line-height: 1.2;
 }
 
 .texto-especial-1 {
@@ -423,6 +424,7 @@ textarea {
   align-items: center;
   justify-content: center;
   padding: 2rem;
+  padding-bottom: 5rem;
 }
 
 .sp-text {
@@ -456,15 +458,23 @@ textarea {
 .flecha-corta {
   content: url("./images/small-arrow-d.png");
   display: block;
-  width: 15%;
+  width: 3rem;
   height: auto;
 }
 
 .flecha-larga {
   content: url("./images/big-arrow-d.png");
   display: block;
-  width: 17%;
+  width: 3rem;
   height: auto;
+}
+
+.contenedor-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
 .pasos {
@@ -484,4 +494,69 @@ textarea {
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
+  margin-bottom: 1rem;
+  padding: 0 2rem;
+}
+
+@media (min-width: 600px) and (max-width: 1023px) {
+  .sp-text {
+    font-size: 0.9rem;
+  }
+
+  .sp-text-2 {
+    font-size: 1.6rem;
+  }
+
+  .subrayado {
+    text-decoration: underline;
+    text-underline-offset: 0.4rem;
+  }
+
+  .container-pasos {
+    padding: 0 8rem;
+  }
+
+  .container-pasos p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contenedor-hiw {
+    flex-direction: row;
+  }
+
+  .sp-text {
+    font-size: 1rem;
+  }
+
+  .sp-text-2 {
+    font-size: 2.6rem;
+  }
+
+  .subrayado {
+    text-decoration: underline;
+    text-underline-offset: 0.6rem;
+  }
+
+  .contenedor-hiw {
+    flex-direction: row;
+    margin: 3rem 0;
+  }
+
+  .flecha-corta {
+    content: url("./images/arrow_tr.png");
+    height: auto;
+  }
+
+  .flecha-larga {
+    content: url("./images/arrow_op.png");
+  }
+
+  .contenedor-box {
+    flex-direction: column;
+  }
+  .container-pasos {
+    flex-direction: column;
+  }
 }
