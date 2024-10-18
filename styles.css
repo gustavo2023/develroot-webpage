@@ -610,3 +610,110 @@ textarea {
   gap: 1rem;
   margin-top: 5rem;
 }
+
+.lista-razones {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+  width: 100%;
+  list-style: none;
+  line-height: 2;
+  letter-spacing: 0.05rem;
+}
+
+.lista-razones li {
+  position: relative;
+  padding-left: 3.5rem;
+}
+
+.lista-razones li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 25%;
+  transform: translateY(-50%);
+  width: 2.5rem;
+  height: 2.5rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.b1::before {
+  background-image: url("./images/small-rocket.png");
+}
+
+.b2::before {
+  background-image: url("./images/tie.png");
+}
+
+.b3::before {
+  background-image: url("./images/target.png");
+}
+
+.contenedor-img {
+  display: block;
+  width: 100%;
+}
+
+.contenedor-img img {
+  width: 100%;
+  height: auto;
+  visibility: hidden;
+}
+
+@media (min-width: 600px) and (max-width: 1023px) {
+  .por-que-develroot {
+    padding: 4rem;
+  }
+  .subtitulo {
+    font-size: 1rem;
+  }
+
+  .sp-text-3 {
+    font-size: 1.9rem;
+  }
+
+  .lista-razones {
+    gap: 4rem;
+  }
+
+  .contenedor-img {
+    width: 85%;
+  }
+
+  .contenedor-img img {
+    visibility: visible;
+  }
+}
+
+@media (min-width: 1024px) {
+  .por-que-develroot {
+    width: 80%;
+    margin-bottom: 8rem;
+  }
+
+  .sp-text-3 {
+    font-size: 3rem;
+  }
+
+  .contenedor-box-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .lista-razones {
+    font-size: 1.4rem;
+  }
+
+  .contenedor-img {
+    width: 50%;
+  }
+
+  .contenedor-img img {
+    visibility: visible;
+  }
+}
