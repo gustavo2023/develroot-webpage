@@ -843,6 +843,7 @@ h4 {
 }
 
 .testimonios {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -866,13 +867,13 @@ h4 {
 
 .contenedor-testimonio {
   background-color: var(--blanco-2);
-  max-width: 25rem;
-  height: 20rem;
+  max-width: 18.5rem;
+  height: 22rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 5rem;
-  padding: 0 2rem;
+  padding: 1rem 2rem;
   border-radius: 0.4rem;
   font-weight: 600;
   -webkit-box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.31);
