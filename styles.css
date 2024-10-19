@@ -867,7 +867,6 @@ h4 {
 
 .contenedor-testimonio {
   background-color: var(--blanco-2);
-  max-width: 18.5rem;
   height: 22rem;
   display: flex;
   flex-direction: column;
@@ -883,4 +882,25 @@ h4 {
 
 .fuente {
   font-size: 0.9rem;
+}
+
+@media (min-width: 600px) {
+  .contenedor-test {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+  }
+
+  .contenedor-testimonio {
+    width: 17.5rem;
+    height: 20rem;
+    padding: 0 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .testimonios h4 {
+    font-size: 2.35rem;
+    margin-top: 1.5rem;
+  }
 }
