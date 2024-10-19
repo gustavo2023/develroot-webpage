@@ -841,3 +841,16 @@ h4 {
     font-size: 0.95rem;
   }
 }
+
+.testimonios {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+h4 {
+  text-align: center;
+  line-height: 1.2;
+}
