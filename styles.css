@@ -848,9 +848,38 @@ h4 {
   justify-content: center;
   align-items: center;
   padding: 2rem;
+  background-color: var(--blanco-1);
 }
 
-h4 {
+.testimonios h4 {
   text-align: center;
   line-height: 1.2;
+}
+
+.contenedor-test {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.contenedor-testimonio {
+  background-color: var(--blanco-2);
+  max-width: 25rem;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5rem;
+  padding: 0 2rem;
+  border-radius: 0.4rem;
+  font-weight: 600;
+  -webkit-box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.31);
+  -moz-box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.31);
+  box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.31);
+}
+
+.fuente {
+  font-size: 0.9rem;
 }
