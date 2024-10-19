@@ -904,3 +904,144 @@ h4 {
     margin-top: 1.5rem;
   }
 }
+
+.cuota-gratis {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.contenedor-cuota-gratis {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #00ca4e;
+  color: var(--blanco-1);
+  margin: 3rem 0;
+  padding: 2rem 2rem 2rem 1rem;
+  gap: 0.5rem;
+  border-radius: 0.8rem;
+  -webkit-box-shadow: 7px 6px 5px 0px rgba(0, 0, 0, 0.27);
+  -moz-box-shadow: 7px 6px 5px 0px rgba(0, 0, 0, 0.27);
+  box-shadow: 7px 6px 5px 0px rgba(0, 0, 0, 0.27);
+}
+
+.promo-descripcion {
+  font-size: 1.15rem;
+}
+
+.btn-quote {
+  width: 72%;
+  padding: 0.5rem 2.2rem;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 0.2rem;
+  background-color: #19cf5f;
+  color: var(--blanco-1);
+  text-wrap: wrap;
+  font-size: 0.75rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.contenedor-cohete {
+  display: none;
+}
+
+@media (min-width: 600px) and (max-width: 1023px) {
+  .contenedor-cuota-gratis {
+    padding: 2rem 4rem;
+  }
+
+  .contenedor-promo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+  }
+
+  .contenedor-promo p:first-of-type {
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+  }
+
+  .promo-descripcion {
+    font-size: 2rem;
+    line-height: 1.1;
+    margin-top: 0.5rem;
+  }
+
+  .btn-quote {
+    width: 50%;
+    padding: 0.8rem 0;
+    font-size: 1.05rem;
+    margin-top: 2rem;
+    background-color: #3fd779;
+  }
+
+  .contenedor-cohete {
+    display: block;
+    width: 21%;
+    height: 0;
+  }
+
+  .contenedor-cohete img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    bottom: 12rem;
+    left: 14rem;
+    flex-grow: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contenedor-cuota-gratis {
+    padding: 2rem 4rem;
+    margin: 10rem 0;
+    width: 85%;
+  }
+
+  .contenedor-promo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 75%;
+  }
+
+  .contenedor-promo p:first-of-type {
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+  }
+
+  .promo-descripcion {
+    font-size: 2.5rem;
+    line-height: 1.1;
+    margin-top: 0.5rem;
+  }
+
+  .btn-quote {
+    width: 50%;
+    padding: 0.8rem 0;
+    font-size: 1.05rem;
+    margin-top: 2rem;
+    background-color: #3fd779;
+  }
+
+  .contenedor-cohete {
+    display: block;
+    width: 21%;
+    height: 0;
+  }
+
+  .contenedor-cohete img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    bottom: 30rem;
+    left: 22rem;
+    flex-grow: 0;
+  }
+}
