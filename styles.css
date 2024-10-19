@@ -1055,7 +1055,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .contenedor-redes-sociales {
@@ -1124,4 +1124,49 @@ footer {
 .derechos {
   font-size: 0.8rem;
   text-align: center;
+  text-wrap: wrap;
+  margin-bottom: 2rem;
+  opacity: 0.8;
+}
+
+@media (min-width: 600px) and (max-width: 1023px) {
+  .contenedor-sociales {
+    display: flex;
+    justify-content: space-between;
+    align-items: first baseline;
+    width: 90%;
+  }
+
+  .contenedor-redes-sociales {
+    justify-content: flex-start;
+  }
+
+  .info-contacto {
+    justify-content: flex-end; 
+  }
+}
+
+@media (min-width: 1024px) {
+  .contenedor-sociales {
+    display: flex;
+    justify-content: space-between;
+    align-items: first baseline;
+    width: 80%;
+  }
+
+  .contenedor-redes-sociales {
+    justify-content: flex-start;
+  }
+
+  .info-contacto {
+    justify-content: flex-end; 
+  }
+
+  .lista-contacto {
+
+  }
+
+  .derechos {
+    margin: 0;
+  }
 }
