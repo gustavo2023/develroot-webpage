@@ -148,7 +148,7 @@ header {
   cursor: pointer;
 }
 
-@media (min-width: 600px) and (max-width: 1023px) {
+@media (min-width: 37.5rem) and (max-width: 63.9375rem) {
   .btn-contacto {
     display: block;
     margin-right: 3rem;
@@ -163,7 +163,7 @@ header {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 64rem) {
   header {
     -webkit-box-shadow: 0px 12px 5px -3px rgba(0, 0, 0, 0.13);
     -moz-box-shadow: 0px 12px 5px -3px rgba(0, 0, 0, 0.13);
@@ -236,7 +236,7 @@ h1 {
   height: auto;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 64rem) {
   .primera-seccion {
     flex-direction: row;
     padding: 6rem;
@@ -338,7 +338,7 @@ textarea {
   cursor: pointer;
 }
 
-@media (min-width: 600px) and (max-width: 1023px) {
+@media (min-width: 37.5rem) and (max-width: 63.9375rem) {
   .cotizacion {
     width: 85%;
     padding: 1.5rem 4rem;
@@ -364,7 +364,7 @@ textarea {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 64rem) {
   .cotizacion {
     width: 85%;
     flex-direction: row;
@@ -498,7 +498,7 @@ textarea {
   padding: 0 2rem;
 }
 
-@media (min-width: 600px) and (max-width: 1023px) {
+@media (min-width: 37.5rem) and (max-width: 63.9375rem) {
   .sp-text {
     font-size: 0.9rem;
   }
@@ -521,7 +521,7 @@ textarea {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 64rem) {
   .sp-text {
     font-size: 1rem;
   }
@@ -663,7 +663,7 @@ textarea {
   visibility: hidden;
 }
 
-@media (min-width: 600px) and (max-width: 1023px) {
+@media (min-width: 37.5rem) and (max-width: 63.9375rem) {
   .por-que-develroot {
     padding: 4rem;
     margin-bottom: 0;
@@ -689,7 +689,7 @@ textarea {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 64rem) {
   .por-que-develroot {
     width: 80%;
     margin-bottom: 8rem;
@@ -788,7 +788,7 @@ h4 {
   text-wrap: wrap;
 }
 
-@media (min-width: 600px) and (max-width: 1023px) {
+@media (min-width: 37.5rem) and (max-width: 63.9375rem) {
   h4 {
     font-size: 1.9rem;
   }
@@ -809,7 +809,7 @@ h4 {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 64rem) {
   h4 {
     font-size: 3rem;
   }
@@ -884,7 +884,7 @@ h4 {
   font-size: 0.9rem;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 37.5rem) {
   .contenedor-test {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -898,7 +898,7 @@ h4 {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 64rem) {
   .testimonios h4 {
     font-size: 2.35rem;
     margin-top: 1.5rem;
@@ -950,7 +950,7 @@ h4 {
   display: none;
 }
 
-@media (min-width: 600px) and (max-width: 1023px) {
+@media (min-width: 37.5rem) and (max-width: 63.9375rem) {
   .contenedor-cuota-gratis {
     padding: 2rem 4rem;
   }
@@ -997,7 +997,7 @@ h4 {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 64rem) {
   .contenedor-cuota-gratis {
     padding: 2rem 4rem;
     margin: 10rem 0;
@@ -1129,7 +1129,7 @@ footer {
   opacity: 0.8;
 }
 
-@media (min-width: 600px) and (max-width: 1023px) {
+@media (min-width: 37.5rem) and (max-width: 63.9375rem) {
   .contenedor-sociales {
     display: flex;
     justify-content: space-between;
@@ -1146,7 +1146,7 @@ footer {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 64rem) {
   .contenedor-sociales {
     display: flex;
     justify-content: space-between;
